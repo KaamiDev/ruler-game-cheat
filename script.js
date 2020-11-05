@@ -10,3 +10,5 @@ let interval = setInterval(() => {
 		: Array.isArray(arr[0]) ? arr[0][0] / arr[0][1] * 16 : arr[0] * 16;
 	num && document.querySelector('img[name=img' + (num < 10 ? '0' + num : num) + ']').click();
 }, 1000);
+
+document.onkeyup = () => clearInterval(interval);
